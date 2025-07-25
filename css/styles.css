@@ -87,26 +87,69 @@ h2 {
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
-/* .social a:hover {
-    background: #e0f2f1;
-    color: #007bff;
-    transform: scale(1.1);
-} */
- /* .social a:hover {
-    background: #00c9a7;
-    color: white;
-    transform: scale(1.1);
-} */
- .social a:hover {
+.social a:hover {
     background: linear-gradient(135deg, #00c9a7, #92fe9d);
     color: white;
     transform: scale(1.1);
-} 
+}
 footer {
     text-align: center;
     padding: 1rem;
     background: #004d40;
     color: white;
     margin-top: 2rem;
+}
+
+/* 🌐 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .social a {
+        font-size: 1.6rem;
+    }
+
+    .whatsapp-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .social {
+        justify-content: space-around;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
